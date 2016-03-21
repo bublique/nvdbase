@@ -9,6 +9,7 @@ if __name__ == '__main__':
 	xmldoc=minidom.parse (sys.argv[1])
 	cvsslist = xmldoc.getELementsByTagName('cvss:base_metrics')
 	print (cvslist)
+	print ("bulka\n")
 	#year_re = re.compile('^CVE-2015')
 	#tree = ET.parse(sys.argv[1])
 	#root = tree.getroot()
