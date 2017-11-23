@@ -6,6 +6,9 @@ import re
 from xml.dom import minidom
 import xlsxwriter
 
+def newfunc:
+    pass
+
 def namespaceResolve(xmldoc, nspace):
     nvd = xmldoc.getElementsByTagName('nvd')[0]
     return nvd.getAttribute('xmlns:' + nspace)
