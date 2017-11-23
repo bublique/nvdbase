@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<nvd xmlns:scap-core="http://scap.nist.gov/schema/scap-core/0.1" xmlns:cvss="http://scap.nist.gov/schema/cvss-v2/0.2" xmlns:vuln="http://scap.nist.gov/schema/vulnerability/0.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:patch="http://scap.nist.gov/schema/patch/0.1" xmlns="http://scap.nist.gov/schema/feed/vulnerability/2.0" xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" nvd_xml_version="2.0" pub_date="2017-11-13T03:00:00" xsi:schemaLocation="http://scap.nist.gov/schema/patch/0.1 https://scap.nist.gov/schema/nvd/patch_0.1.xsd http://scap.nist.gov/schema/feed/vulnerability/2.0 https://scap.nist.gov/schema/nvd/nvd-cve-feed_2.0.xsd http://scap.nist.gov/schema/scap-core/0.1 https://scap.nist.gov/schema/nvd/scap-core_0.1.xsd">
+  <entry id="CVE-2017-0001">
+    <vuln:vulnerable-configuration id="http://nvd.nist.gov/">
+      <cpe-lang:logical-test operator="OR" negate="false">
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_10:-"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_10:1511"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_10:1607"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_7::sp1"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_8.1"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_rt_8.1"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_server_2008::sp2"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_server_2008:r2:sp1"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_server_2012:-"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_server_2012:r2"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_vista::sp2"/>
+      </cpe-lang:logical-test>
+    </vuln:vulnerable-configuration>
+    <vuln:vulnerable-software-list>
+      <vuln:product>cpe:/o:microsoft:windows_10:-</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_10:1511</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_10:1607</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_7::sp1</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_8.1</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_rt_8.1</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_server_2008::sp2</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_server_2008:r2:sp1</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_server_2012:-</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_server_2012:r2</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_vista::sp2</vuln:product>
+    </vuln:vulnerable-software-list>
+    <vuln:cve-id>CVE-2017-0001</vuln:cve-id>
+    <vuln:published-datetime>2017-03-16T20:59:00.167-04:00</vuln:published-datetime>
+    <vuln:last-modified-datetime>2017-07-11T21:29:03.597-04:00</vuln:last-modified-datetime>
+    <vuln:cvss>
+      <cvss:base_metrics>
+        <cvss:score>7.2</cvss:score>
+        <cvss:access-vector>LOCAL</cvss:access-vector>
+        <cvss:access-complexity>LOW</cvss:access-complexity>
+        <cvss:authentication>NONE</cvss:authentication>
+        <cvss:confidentiality-impact>COMPLETE</cvss:confidentiality-impact>
+        <cvss:integrity-impact>COMPLETE</cvss:integrity-impact>
+        <cvss:availability-impact>COMPLETE</cvss:availability-impact>
+        <cvss:source>http://nvd.nist.gov</cvss:source>
+        <cvss:generated-on-datetime>2017-03-21T16:19:00.710-04:00</cvss:generated-on-datetime>
+      </cvss:base_metrics>
+    </vuln:cvss>
+    <vuln:cwe id="CWE-264"/>
+    <vuln:references xml:lang="en" reference_type="VENDOR_ADVISORY">
+      <vuln:source>BID</vuln:source>
+      <vuln:reference href="http://www.securityfocus.com/bid/96057" xml:lang="en">96057</vuln:reference>
+    </vuln:references>
+    <vuln:references xml:lang="en" reference_type="UNKNOWN">
+      <vuln:source>SECTRACK</vuln:source>
+      <vuln:reference href="http://www.securitytracker.com/id/1038002" xml:lang="en">1038002</vuln:reference>
+    </vuln:references>
+    <vuln:references xml:lang="en" reference_type="VENDOR_ADVISORY">
+      <vuln:source>CONFIRM</vuln:source>
+      <vuln:reference href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-0001" xml:lang="en">https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-0001</vuln:reference>
+    </vuln:references>
+    <vuln:summary>The Graphics Device Interface (GDI) in Microsoft Windows Vista SP2; Windows Server 2008 SP2 and R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; and Windows 10 Gold, 1511, and 1607 allows local users to gain privileges via a crafted application, aka "Windows GDI Elevation of Privilege Vulnerability." This vulnerability is different from those described in CVE-2017-0005, CVE-2017-0025, and CVE-2017-0047.</vuln:summary>
+  </entry>
+   <entry id="CVE-2017-0047">
+    <vuln:vulnerable-configuration id="http://nvd.nist.gov/">
+      <cpe-lang:logical-test operator="OR" negate="false">
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_10:-"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_10:1511"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_10:1607"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_7::sp1"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_8.1"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_rt_8.1"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_server_2008::sp2"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_server_2008:r2:sp1"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_server_2012:-"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_server_2012:r2"/>
+        <cpe-lang:fact-ref name="cpe:/o:microsoft:windows_vista::sp2"/>
+      </cpe-lang:logical-test>
+    </vuln:vulnerable-configuration>
+    <vuln:vulnerable-software-list>
+      <vuln:product>cpe:/o:microsoft:windows_10:-</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_10:1511</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_10:1607</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_7::sp1</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_8.1</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_rt_8.1</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_server_2008::sp2</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_server_2008:r2:sp1</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_server_2012:-</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_server_2012:r2</vuln:product>
+      <vuln:product>cpe:/o:microsoft:windows_vista::sp2</vuln:product>
+    </vuln:vulnerable-software-list>
+    <vuln:cve-id>CVE-2017-0047</vuln:cve-id>
+    <vuln:published-datetime>2017-03-16T20:59:01.243-04:00</vuln:published-datetime>
+    <vuln:last-modified-datetime>2017-07-11T21:29:05.377-04:00</vuln:last-modified-datetime>
+    <vuln:cvss>
+      <cvss:base_metrics>
+        <cvss:score>7.2</cvss:score>
+        <cvss:access-vector>LOCAL</cvss:access-vector>
+        <cvss:access-complexity>LOW</cvss:access-complexity>
+        <cvss:authentication>NONE</cvss:authentication>
+        <cvss:confidentiality-impact>COMPLETE</cvss:confidentiality-impact>
+        <cvss:integrity-impact>COMPLETE</cvss:integrity-impact>
+        <cvss:availability-impact>COMPLETE</cvss:availability-impact>
+        <cvss:source>http://nvd.nist.gov</cvss:source>
+        <cvss:generated-on-datetime>2017-03-20T18:02:13.420-04:00</cvss:generated-on-datetime>
+      </cvss:base_metrics>
+    </vuln:cvss>
+    <vuln:cwe id="CWE-264"/>
+    <vuln:references xml:lang="en" reference_type="VENDOR_ADVISORY">
+      <vuln:source>BID</vuln:source>
+      <vuln:reference href="http://www.securityfocus.com/bid/96034" xml:lang="en">96034</vuln:reference>
+    </vuln:references>
+    <vuln:references xml:lang="en" reference_type="UNKNOWN">
+      <vuln:source>SECTRACK</vuln:source>
+      <vuln:reference href="http://www.securitytracker.com/id/1038002" xml:lang="en">1038002</vuln:reference>
+    </vuln:references>
+    <vuln:references xml:lang="en" reference_type="VENDOR_ADVISORY">
+      <vuln:source>CONFIRM</vuln:source>
+      <vuln:reference href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-0047" xml:lang="en">https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-0047</vuln:reference>
+    </vuln:references>
+    <vuln:summary>The Graphics Device Interface (GDI) in Microsoft Windows Vista SP2; Windows Server 2008 SP2 and R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; and Windows 10 Gold, 1511, and 1607 allows local users to gain privileges via a crafted application, aka "Windows GDI Elevation of Privilege Vulnerability." This vulnerability is different from those described in CVE-2017-0001, CVE-2017-0005 and CVE-2017-0025.</vuln:summary>
+  </entry>
+  <entry id="CVE-2017-9938">
+    <vuln:vulnerable-configuration id="http://nvd.nist.gov/">
+      <cpe-lang:logical-test operator="OR" negate="false">
+        <cpe-lang:fact-ref name="cpe:/a:siemens:simatic_logon:1.5:sp3_update_2"/>
+      </cpe-lang:logical-test>
+    </vuln:vulnerable-configuration>
+    <vuln:vulnerable-software-list>
+      <vuln:product>cpe:/a:siemens:simatic_logon:1.5:sp3_update_2</vuln:product>
+    </vuln:vulnerable-software-list>
+    <vuln:cve-id>CVE-2017-9938</vuln:cve-id>
+    <vuln:published-datetime>2017-08-07T20:29:00.353-04:00</vuln:published-datetime>
+    <vuln:last-modified-datetime>2017-08-17T09:39:25.183-04:00</vuln:last-modified-datetime>
+    <vuln:cvss>
+      <cvss:base_metrics>
+        <cvss:score>5.0</cvss:score>
+        <cvss:access-vector>NETWORK</cvss:access-vector>
+        <cvss:access-complexity>LOW</cvss:access-complexity>
+        <cvss:authentication>NONE</cvss:authentication>
+        <cvss:confidentiality-impact>NONE</cvss:confidentiality-impact>
+        <cvss:integrity-impact>NONE</cvss:integrity-impact>
+        <cvss:availability-impact>PARTIAL</cvss:availability-impact>
+        <cvss:source>http://nvd.nist.gov</cvss:source>
+        <cvss:generated-on-datetime>2017-08-16T23:41:24.660-04:00</cvss:generated-on-datetime>
+      </cvss:base_metrics>
+    </vuln:cvss>
+    <vuln:cwe id="CWE-20"/>
+    <vuln:references xml:lang="en" reference_type="VENDOR_ADVISORY">
+      <vuln:source>BID</vuln:source>
+      <vuln:reference href="http://www.securityfocus.com/bid/99539" xml:lang="en">99539</vuln:reference>
+    </vuln:references>
+    <vuln:references xml:lang="en" reference_type="VENDOR_ADVISORY">
+      <vuln:source>CONFIRM</vuln:source>
+      <vuln:reference href="https://www.siemens.com/cert/pool/cert/siemens_security_advisory_ssa-804859.pdf" xml:lang="en">https://www.siemens.com/cert/pool/cert/siemens_security_advisory_ssa-804859.pdf</vuln:reference>
+    </vuln:references>
+    <vuln:summary>A vulnerability was discovered in Siemens SIMATIC Logon (All versions before V1.6) that could allow specially crafted packets sent to the SIMATIC Logon Remote Access service on port 16389/tcp to cause a Denial-of-Service condition. The service restarts automatically.</vuln:summary>
+  </entry>
+  <entry id="CVE-2017-9939">
+    <vuln:vulnerable-configuration id="http://nvd.nist.gov/">
+      <cpe-lang:logical-test operator="OR" negate="false">
+        <cpe-lang:fact-ref name="cpe:/a:siemens:sipass_integrated:2.65:sp2"/>
+      </cpe-lang:logical-test>
+    </vuln:vulnerable-configuration>
+    <vuln:vulnerable-software-list>
+      <vuln:product>cpe:/a:siemens:sipass_integrated:2.65:sp2</vuln:product>
+    </vuln:vulnerable-software-list>
+    <vuln:cve-id>CVE-2017-9939</vuln:cve-id>
+    <vuln:published-datetime>2017-08-07T20:29:00.383-04:00</vuln:published-datetime>
+    <vuln:last-modified-datetime>2017-08-16T09:45:42.523-04:00</vuln:last-modified-datetime>
+    <vuln:cvss>
+      <cvss:base_metrics>
+        <cvss:score>7.5</cvss:score>
+        <cvss:access-vector>NETWORK</cvss:access-vector>
+        <cvss:access-complexity>LOW</cvss:access-complexity>
+        <cvss:authentication>NONE</cvss:authentication>
+        <cvss:confidentiality-impact>PARTIAL</cvss:confidentiality-impact>
+        <cvss:integrity-impact>PARTIAL</cvss:integrity-impact>
+        <cvss:availability-impact>PARTIAL</cvss:availability-impact>
+        <cvss:source>http://nvd.nist.gov</cvss:source>
+        <cvss:generated-on-datetime>2017-08-16T09:31:13.600-04:00</cvss:generated-on-datetime>
+      </cvss:base_metrics>
+    </vuln:cvss>
+    <vuln:cwe id="CWE-287"/>
+    <vuln:references xml:lang="en" reference_type="VENDOR_ADVISORY">
+      <vuln:source>BID</vuln:source>
+      <vuln:reference href="http://www.securityfocus.com/bid/99578" xml:lang="en">99578</vuln:reference>
+    </vuln:references>
+    <vuln:references xml:lang="en" reference_type="VENDOR_ADVISORY">
+      <vuln:source>CONFIRM</vuln:source>
+      <vuln:reference href="https://www.siemens.com/cert/pool/cert/siemens_security_advisory_ssa-339433.pdf" xml:lang="en">https://www.siemens.com/cert/pool/cert/siemens_security_advisory_ssa-339433.pdf</vuln:reference>
+    </vuln:references>
+    <vuln:summary>A vulnerability was discovered in Siemens SiPass integrated (All versions before V2.70) that could allow an attacker with network access to the SiPass integrated server to bypass the authentication mechanism and perform administrative operations.</vuln:summary>
+  </entry>
+</nvd>
